@@ -1,0 +1,82 @@
+/* Nova Mono and Lato */
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Nova Mono', monospace; \
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nova+Mono&display=swap');
+
+/* Pacifico and Quicksand */
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* colors */
+  --primary: #e6772e;
+  --primary-light: #e69058;
+  --secondary: #fff;
+  --secondary-ligtht: #fff;
+  --background-dark: #363636;
+  --backgroud: #535353;
+  /* fonts */
+  --statement-font: 'Pacifico', cursive;
+  --text-font: 'Quicksand', sans-serif;
+}
+
+* {
+  /* reset */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+body {
+  background-color: var(--backgroud);
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  /* alignment */
+  display: flex;
+  padding: 10px 100px 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+  /* colors */
+  background-color: var(--background-dark);
+  border-bottom: 2px solid var(--primary-light);
+}
+
+header .logo {
+  color: var(--primary);
+  font-family: var(--statement-font);
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li:hover {
+  color: var(--primary);
+}
+
+footer {
+  /* alignment */
+  display: flex;
+  justify-content: center;
+  /* size */
+  padding: 10px;
+  /* colors */
+  background-color: var(--background-dark);
+}
